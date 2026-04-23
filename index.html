@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>InTouch Lab Result</title></head>
+<body style="text-align:center; padding:50px;">
+    <h1>Lab Result</h1>
+    <div id="msg">Loading...</div>
+    <script>
+        const token = new URLSearchParams(window.location.search).get('token');
+        if(token) {
+            document.getElementById('msg').innerHTML = 'Token: ' + token + '<br>Contact lab for result';
+        }
+    </script>
+</body>
+</html>
